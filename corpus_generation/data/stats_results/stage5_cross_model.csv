@@ -1,0 +1,6 @@
+metric,gemma3:4b_H,gemma3:4b_p,gemma3:4b_eta2,llama3_H,llama3_p,llama3_eta2,mistral_H,mistral_p,mistral_eta2,replicated_all_models
+agency_arc,26.455,2.6e-05,0.3208,22.86,0.000135,0.2694,21.562,0.000245,0.2509,True
+agency_quality_score,46.488,0.0,0.607,25.811,3.5e-05,0.3116,33.682,1e-06,0.424,True
+subordination_score,13.228,0.010212,0.1318,22.533,0.000157,0.2648,28.508,1e-05,0.3501,True
+dialogue_score,16.61,0.002301,0.1801,23.584,9.7e-05,0.2798,37.953,0.0,0.485,True
+resolution_score,9.493,0.049898,0.0785,1.498,0.82692,0.0,23.268,0.000112,0.2753,False

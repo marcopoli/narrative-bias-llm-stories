@@ -1,0 +1,4 @@
+metric,categories,grouping,chi2,df,p,cramers_v
+taxonomy_label,"['Professional_Authority', 'Institutional_Subordination']",profession,127.364,4,0.0,0.7524
+taxonomy_label,"['Professional_Authority', 'Institutional_Subordination']",gender,2.04,2,0.360567,0.0952
+taxonomy_label,"['Professional_Authority', 'Institutional_Subordination']",nationality,2.04,4,0.728373,0.0952

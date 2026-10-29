@@ -1,0 +1,9 @@
+metric,sw_stat,sw_p,normal,levene_stat,levene_p,recommended_test
+sentiment_score,0.9306,0.0,False,8.5785,0.0,Kruskal-Wallis
+sentiment_volatility,0.8484,0.0,False,6.9026,0.0,Kruskal-Wallis
+agency_arc,0.9756,0.0015,False,2.1339,0.0776,Kruskal-Wallis
+agency_quality_score,0.9801,0.0061,False,1.9451,0.104,Kruskal-Wallis
+subordination_score,0.9551,0.0,False,1.5124,0.1995,Kruskal-Wallis
+concreteness_score,0.9514,0.0,False,4.6242,0.0013,Kruskal-Wallis
+dialogue_score,0.9098,0.0,False,0.973,0.4231,Kruskal-Wallis
+resolution_score,0.9614,0.0,False,1.3829,0.2408,Kruskal-Wallis

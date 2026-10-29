@@ -1,0 +1,7 @@
+measure,contrast,d_units,d_stories
+sentiment_score,Engineer vs Janitor,1.419911337759103,0.768014079422528
+agency_arc,Engineer vs Janitor,1.4539938646056039,0.4218755550988341
+agency_quality_score,Engineer vs Janitor,1.6855156463648535,0.6617422989577105
+concreteness_score,Engineer vs Janitor,7.471257295036704,3.1539972226180937
+agency_quality_score,Non-Binary vs Male,0.8321478178784465,0.41502759812452883
+agency_quality_score,Non-Binary vs Female,0.5710457927618843,0.2780871748296158

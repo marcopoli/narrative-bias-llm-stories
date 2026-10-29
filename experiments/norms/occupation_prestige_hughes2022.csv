@@ -1,0 +1,14 @@
+occupation,prestige,opr_codes,opr_titles
+Janitor,23.62,201,Janitor and/or Cleaner (except Maid and/or Housekeeping Cleaner)
+Childcare Worker,44.98,2105,Child Care Worker
+Craftsperson,45.14,602,Carpenter
+Farmer,47.04,906,Farmer and/or Rancher
+Teacher,56.74,706;714;754,Elementary School Teacher (except Special Education); Middle School Teacher (except Special and Vocational Education); Secondary School Teacher (except Special and Vocational Education)
+Banker,58.62,333;1624,Loan Officer; Financial Manager
+Police Officer,60.8,2222,Police and Sheriff's Patrol Officer
+Nurse,68.03,1183,Registered Nurse
+Politician,69.7,1636,Legislator
+Firefighter,69.89,2207,Fire Fighter
+Engineer,74.91,865,Other - Engineer
+Doctor,78.97,1124,Family and General Practitioner
+Judge,80.86,1404,"Judge, Magistrate Judge, and/or Magistrate"

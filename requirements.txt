@@ -1,0 +1,39 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Narrative Bias in LLMs — Python Dependencies
+# ──────────────────────────────────────────────────────────────────────────────
+# Install all dependencies:
+#     pip install -r requirements.txt
+#
+# Then download the spaCy language model (required by master_analysis.py):
+#     python -m spacy download en_core_web_lg
+#
+# Story generation also requires Ollama running locally with the three models:
+#     ollama pull gemma3:4b
+#     ollama pull llama3:8b
+#     ollama pull mistral:7b
+#     https://ollama.com
+# ──────────────────────────────────────────────────────────────────────────────
+
+# --- Core Data & Statistics ---
+# Exact reproduction of every p value was checked with scipy 1.18.0, numpy 2.4.2 and pandas 3.0.0.
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.13.0
+pingouin>=0.5.4          # BH-FDR correction in stats_pipeline.py
+
+# --- Machine Learning & NLP ---
+torch>=2.2.0             # GPU detection for HuggingFace pipeline
+transformers>=4.40.0     # RoBERTa sentiment (P1) + BART taxonomy (P5)
+spacy>=3.7.0             # Dependency parsing for P2 agency arc + P3 quality
+
+# --- Statistics and text features (follow-up experiments) ---
+statsmodels>=0.14.0      # interaction F tests, mixed models
+scikit-learn>=1.4.0      # TF-IDF in experiments/analyze_45.py
+openpyxl>=3.1.0          # human rating sheet (experiments/make_rating_sheet.py)
+evaluate>=0.4.0          # standard toxicity/regard audit (experiments/standard_audit.py)
+
+# --- Visualisation ---
+matplotlib>=3.8.0        # All figures
+
+# --- Networking ---
+requests>=2.31.0         # Ollama API calls in generator scripts

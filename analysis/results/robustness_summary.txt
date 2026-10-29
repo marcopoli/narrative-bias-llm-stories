@@ -1,0 +1,107 @@
+Validation (story level): r(P2 stored, P2 re-implemented) = 1.000; r(P3 stored, P3 re-implemented) = 0.995; r(P1 stored, P1 re-implemented) = 1.000
+protagonist name found in 99.3% of stories
+p2_orig: defined for 0.986 of stories
+p2_prot: defined for 0.967 of stories
+p2_name: defined for 0.786 of stories
+p3_prot: defined for 0.992 of stories
+p3_name: defined for 0.940 of stories
+
+Sentence classes: mean share pos 0.566, neu 0.423, neg 0.011; stories with more negative than positive sentences: 0; max share_neg 0.29
+stories with no negative sentence: 0.824
+by profession:
+             share_pos  share_neu  share_neg  tone_posneg
+profession                                              
+Doctor          0.527      0.453      0.020        0.506
+Engineer        0.613      0.383      0.004        0.609
+Janitor         0.524      0.463      0.013        0.511
+Nurse           0.551      0.439      0.010        0.540
+Teacher         0.615      0.377      0.008        0.607
+by model:
+             share_pos  share_neu  share_neg  tone_posneg
+model_name                                              
+gemma3:4b       0.513      0.461      0.025        0.488
+llama3          0.514      0.481      0.005        0.509
+mistral         0.670      0.326      0.004        0.667
+
+Omnibus Kruskal-Wallis for robustness variants:
+ factor       gender  model_name  nationality  profession
+variant                                                 
+p2_name       0.000       0.452        0.011       0.025
+p2_orig       0.000       0.038        0.021       0.208
+p2_prot       0.000       0.018        0.018       0.196
+p3_name       0.128       0.052        0.029       0.194
+p3_prot       0.118       0.236        0.000       0.277
+tone_posneg   0.079       0.580        0.000       0.159
+factor        gender model_name nationality profession
+variant                                               
+p2_name         0.83    5.9e-23        0.17       0.05
+p2_orig         0.71     0.0055       0.075    4.3e-10
+p2_prot         0.81       0.05       0.094    1.4e-09
+p3_name      2.4e-07     0.0011       0.035    1.8e-09
+p3_prot      7.4e-07    1.6e-12        0.66    2.6e-13
+tone_posneg  5.6e-05    4.2e-29        0.64    7.3e-08
+
+Profession means by model (Janitor lowest?):
+tone_posneg | lowest per model: {'gemma3:4b': 'Doctor', 'llama3': 'Nurse', 'mistral': 'Doctor'} 
+ profession  Doctor  Engineer  Janitor  Nurse  Teacher
+model_name                                           
+gemma3:4b    0.410     0.570    0.419  0.492    0.550
+llama3       0.494     0.529    0.496  0.484    0.543
+mistral      0.615     0.728    0.617  0.646    0.729
+p2_orig | lowest per model: {'gemma3:4b': 'Janitor', 'llama3': 'Janitor', 'mistral': 'Janitor'} 
+ profession  Doctor  Engineer  Janitor  Nurse  Teacher
+model_name                                           
+gemma3:4b    0.113     0.239    0.064  0.170    0.187
+llama3       0.108     0.137    0.072  0.141    0.106
+mistral      0.165     0.125    0.070  0.135    0.173
+p2_prot | lowest per model: {'gemma3:4b': 'Janitor', 'llama3': 'Janitor', 'mistral': 'Doctor'} 
+ profession  Doctor  Engineer  Janitor  Nurse  Teacher
+model_name                                           
+gemma3:4b    0.105     0.216    0.045  0.112    0.171
+llama3       0.122     0.182    0.104  0.190    0.123
+mistral      0.121     0.185    0.141  0.174    0.217
+p2_name | lowest per model: {'gemma3:4b': 'Janitor', 'llama3': 'Doctor', 'mistral': 'Doctor'} 
+ profession  Doctor  Engineer  Janitor  Nurse  Teacher
+model_name                                           
+gemma3:4b    0.035     0.072    0.024  0.084    0.043
+llama3       0.026     0.089    0.027  0.075    0.079
+mistral      0.165     0.281    0.334  0.370    0.338
+p3_prot | lowest per model: {'gemma3:4b': 'Janitor', 'llama3': 'Teacher', 'mistral': 'Janitor'} 
+ profession  Doctor  Engineer  Janitor  Nurse  Teacher
+model_name                                           
+gemma3:4b    0.427     0.428    0.406  0.438    0.412
+llama3       0.405     0.405    0.399  0.419    0.376
+mistral      0.426     0.426    0.408  0.439    0.427
+p3_name | lowest per model: {'gemma3:4b': 'Janitor', 'llama3': 'Teacher', 'mistral': 'Janitor'} 
+ profession  Doctor  Engineer  Janitor  Nurse  Teacher
+model_name                                           
+gemma3:4b    0.404     0.412    0.394  0.417    0.398
+llama3       0.393     0.404    0.380  0.417    0.378
+mistral      0.411     0.411    0.402  0.432    0.420
+
+Gender contrasts on P3 variants (unit level):
+  p3_prot Non-Binary-Male: means 0.4266 vs 0.4055, d = 0.48, MWU p = 3.8e-07
+  p3_prot Non-Binary-Female: means 0.4266 vs 0.4160, d = 0.65, MWU p = 0.00034
+  p3_prot Female-Male: means 0.4160 vs 0.4055, d = 0.24, MWU p = 0.056
+  additive model gender: F = 7.30, p = 0.00086
+  NB highest in 5 of 5 professions
+  p3_name Non-Binary-Male: means 0.4179 vs 0.3916, d = 0.58, MWU p = 1.6e-07
+  p3_name Non-Binary-Female: means 0.4179 vs 0.4055, d = 0.60, MWU p = 0.0005
+  p3_name Female-Male: means 0.4055 vs 0.3916, d = 0.31, MWU p = 0.013
+  additive model gender: F = 10.05, p = 6.7e-05
+  NB highest in 5 of 5 professions
+
+Engineer-Janitor d on P2 variants (unit level):
+  p2_orig: 0.167 vs 0.069, d = 1.42, MWU p = 2.3e-08
+  p2_prot: 0.194 vs 0.097, d = 1.32, MWU p = 3.6e-08
+  p2_name: 0.147 vs 0.128, d = 0.11, MWU p = 0.31
+  tone_posneg: 0.609 vs 0.511, d = 1.03, MWU p = 3.6e-05
+
+Act-level protagonist subject share by profession:
+             act1_prot  act3_prot  act1_name  act3_name
+profession                                            
+Doctor          0.808      0.924      0.883      0.962
+Engineer        0.731      0.924      0.819      0.960
+Janitor         0.805      0.902      0.818      0.940
+Nurse           0.758      0.916      0.779      0.954
+Teacher         0.748      0.920      0.800      0.965

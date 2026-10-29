@@ -1,0 +1,13 @@
+measure,model,eta2_H,p,lowest,highest
+sentiment_score,gemma3:4b,0.6494807282363301,4.672779204008988e-10,Doctor,Engineer
+sentiment_score,llama3,0.5128993367784819,4.53313200137965e-08,Janitor,Nurse
+sentiment_score,mistral,0.6766209639234854,1.8740397487048186e-10,Janitor,Teacher
+agency_arc,gemma3:4b,0.32078103990077445,2.5619130915055875e-05,Janitor,Engineer
+agency_arc,llama3,0.26943502468917496,0.00013501903521447416,Janitor,Nurse
+agency_arc,mistral,0.25088529059278336,0.0002449397330507666,Janitor,Teacher
+agency_quality_score,gemma3:4b,0.6069688110350734,1.9494023452412744e-09,Janitor,Nurse
+agency_quality_score,llama3,0.3115813888860646,3.45509658594626e-05,Janitor,Nurse
+agency_quality_score,mistral,0.4240241910671414,8.660215005467085e-07,Janitor,Nurse
+concreteness_score,gemma3:4b,0.901588024268539,9.236652341807792e-14,Janitor,Engineer
+concreteness_score,llama3,0.7871099869739248,4.488410358385374e-12,Janitor,Engineer
+concreteness_score,mistral,0.7838825086962586,5.006593499367479e-12,Janitor,Engineer

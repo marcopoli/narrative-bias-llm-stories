@@ -1,0 +1,313 @@
+stories: 4500 | per model: {'gemma3:4b': 1500, 'mistral': 1500, 'llama3': 1500}
+story length (words): mean 330.8, SD 45.1, range 232-506
+story-level P1: mean 0.780, SD 0.058, min 0.347, max 0.902, share < 0: 0.000
+fallback (=0.5, no human mention) share in agency_start: 0.115
+fallback (=0.5, no human mention) share in agency_middle: 0.039
+fallback (=0.5, no human mention) share in agency_end: 0.004
+analysis units: 225
+
+Profession means (SD):
+            sentiment_score        agency_arc        agency_quality_score        concreteness_score        agency_start        agency_end       
+                      mean    std       mean    std                 mean    std               mean    std         mean    std       mean    std
+profession                                                                                                                                     
+Engineer             0.798  0.019      0.172  0.078                0.422  0.012              0.464  0.008        0.731  0.072      0.904  0.031
+Teacher              0.790  0.028      0.157  0.067                0.416  0.014              0.437  0.008        0.752  0.070      0.909  0.027
+Nurse                0.784  0.033      0.153  0.077                0.431  0.012              0.451  0.006        0.742  0.073      0.895  0.034
+Doctor               0.770  0.046      0.132  0.063                0.421  0.014              0.453  0.006        0.769  0.063      0.901  0.026
+Janitor              0.759  0.034      0.072  0.058                0.404  0.009              0.416  0.005        0.813  0.053      0.885  0.030
+
+Means by gender:
+             sentiment_score  agency_arc  agency_quality_score  concreteness_score
+gender                                                                           
+Female               0.7835      0.1407                0.4172              0.4428
+Male                 0.7726      0.1307                0.4135              0.4432
+Non-Binary           0.7844      0.1399                0.4259              0.4475
+
+Means by nationality:
+              sentiment_score  agency_arc  agency_quality_score  concreteness_score
+nationality                                                                       
+American              0.7789      0.1219                0.4188              0.4438
+Chinese               0.7812      0.1171                0.4213              0.4454
+German                0.7798      0.1571                0.4194              0.4456
+Indian                0.7797      0.1382                0.4158              0.4438
+Nigerian              0.7812      0.1513                0.4190              0.4438
+
+Means by model_name:
+             sentiment_score  agency_arc  agency_quality_score  concreteness_score
+model_name                                                                       
+gemma                0.7419      0.1615                0.4228              0.4468
+llama3               0.8067      0.1129                0.4087              0.4424
+mistral              0.7919      0.1369                0.4251              0.4442
+
+Omnibus Kruskal-Wallis (eta2_H truncated at 0; BH over 16 tests):
+                  measure       factor         H  df       p  eta2_H       q  sig
+0        sentiment_score   profession   34.3139   4  0.0000  0.1378  0.0000  ***
+1        sentiment_score       gender    3.9750   2  0.1370  0.0089  0.1993   ns
+2        sentiment_score  nationality    0.4890   4  0.9746  0.0000  0.9746   ns
+3        sentiment_score   model_name  132.3011   2  0.0000  0.5869  0.0000  ***
+4             agency_arc   profession   50.2591   4  0.0000  0.2103  0.0000  ***
+5             agency_arc       gender    0.8303   2  0.6602  0.0000  0.7546   ns
+6             agency_arc  nationality    9.2113   4  0.0560  0.0237  0.0996   ns
+7             agency_arc   model_name   14.0671   2  0.0009  0.0544  0.0018   **
+8   agency_quality_score   profession   80.6316   4  0.0000  0.3483  0.0000  ***
+9   agency_quality_score       gender   22.0190   2  0.0000  0.0902  0.0000  ***
+10  agency_quality_score  nationality    2.9814   4  0.5609  0.0000  0.6904   ns
+11  agency_quality_score   model_name   50.9536   2  0.0000  0.2205  0.0000  ***
+12    concreteness_score   profession  182.2677   4  0.0000  0.8103  0.0000  ***
+13    concreteness_score       gender    4.6819   2  0.0962  0.0121  0.1540   ns
+14    concreteness_score  nationality    1.3097   4  0.8597  0.0000  0.9170   ns
+15    concreteness_score   model_name    2.9674   2  0.2268  0.0044  0.3024   ns
+
+Per-model profession effect:
+                  measure    model  eta2_H       p   lowest   highest
+0        sentiment_score    gemma  0.6495  0.0000   Doctor  Engineer
+1        sentiment_score   llama3  0.5129  0.0000  Janitor     Nurse
+2        sentiment_score  mistral  0.6766  0.0000  Janitor   Teacher
+3             agency_arc    gemma  0.3208  0.0000  Janitor  Engineer
+4             agency_arc   llama3  0.2694  0.0001  Janitor     Nurse
+5             agency_arc  mistral  0.2509  0.0002  Janitor   Teacher
+6   agency_quality_score    gemma  0.6070  0.0000  Janitor     Nurse
+7   agency_quality_score   llama3  0.3116  0.0000  Janitor     Nurse
+8   agency_quality_score  mistral  0.4240  0.0000  Janitor     Nurse
+9     concreteness_score    gemma  0.9016  0.0000  Janitor  Engineer
+10    concreteness_score   llama3  0.7871  0.0000  Janitor  Engineer
+11    concreteness_score  mistral  0.7839  0.0000  Janitor  Engineer
+
+Per-model profession means:
+sentiment_score 
+ profession  Engineer  Teacher  Nurse  Doctor  Janitor
+model_name                                           
+gemma          0.777    0.754  0.744   0.715    0.720
+llama3         0.808    0.803  0.818   0.817    0.788
+mistral        0.809    0.811  0.789   0.779    0.770
+agency_arc 
+ profession  Engineer  Teacher  Nurse  Doctor  Janitor
+model_name                                           
+gemma          0.245    0.191  0.179   0.120    0.072
+llama3         0.137    0.106  0.141   0.108    0.072
+mistral        0.134    0.174  0.138   0.166    0.072
+agency_quality_score 
+ profession  Engineer  Teacher  Nurse  Doctor  Janitor
+model_name                                           
+gemma          0.431    0.414  0.436   0.427    0.406
+llama3         0.409    0.408  0.420   0.406    0.400
+mistral        0.428    0.426  0.437   0.428    0.406
+concreteness_score 
+ profession  Engineer  Teacher  Nurse  Doctor  Janitor
+model_name                                           
+gemma          0.471    0.435  0.453   0.457    0.418
+llama3         0.457    0.440  0.452   0.451    0.413
+mistral        0.464    0.438  0.449   0.452    0.418
+
+Pairwise profession contrasts (BH over 40):
+                  measure        g1       g2   mean1   mean2       d   ci_lo   ci_hi       U       p       q  sig
+0        sentiment_score  Engineer  Teacher  0.7981  0.7895  0.3580 -0.0548  0.7638  1159.0  0.2387  0.2747   ns
+1        sentiment_score  Engineer    Nurse  0.7981  0.7835  0.5390  0.1333  0.9831  1245.0  0.0612  0.0906   ns
+2        sentiment_score  Engineer   Doctor  0.7981  0.7705  0.7891  0.4196  1.2099  1338.5  0.0086  0.0138    *
+3        sentiment_score  Engineer  Janitor  0.7981  0.7591  1.4199  1.0679  1.8824  1757.5  0.0000  0.0000  ***
+4        sentiment_score   Teacher    Nurse  0.7895  0.7835  0.1944 -0.1944  0.6389  1109.0  0.4385  0.4498   ns
+5        sentiment_score   Teacher   Doctor  0.7895  0.7705  0.5015  0.1114  0.9371  1237.0  0.0707  0.0975   ns
+6        sentiment_score   Teacher  Janitor  0.7895  0.7591  0.9773  0.6059  1.4352  1569.5  0.0000  0.0000  ***
+7        sentiment_score     Nurse   Doctor  0.7835  0.7705  0.3270 -0.0641  0.7589  1147.5  0.2778  0.3086   ns
+8        sentiment_score     Nurse  Janitor  0.7835  0.7591  0.7296  0.3495  1.1705  1414.5  0.0012  0.0022   **
+9        sentiment_score    Doctor  Janitor  0.7705  0.7591  0.2836 -0.1218  0.7319  1213.0  0.1065  0.1375   ns
+10            agency_arc  Engineer  Teacher  0.1722  0.1572  0.2047 -0.2114  0.5899  1122.0  0.3791  0.3990   ns
+11            agency_arc  Engineer    Nurse  0.1722  0.1527  0.2507 -0.1395  0.6808  1158.5  0.2403  0.2747   ns
+12            agency_arc  Engineer   Doctor  0.1722  0.1316  0.5717  0.1757  0.9875  1306.0  0.0181  0.0278    *
+13            agency_arc  Engineer  Janitor  0.1722  0.0719  1.4540  1.0493  1.9542  1728.0  0.0000  0.0000  ***
+14            agency_arc   Teacher    Nurse  0.1572  0.1527  0.0630 -0.3320  0.4925  1068.5  0.6542  0.6542   ns
+15            agency_arc   Teacher   Doctor  0.1572  0.1316  0.3947 -0.0241  0.8463  1210.5  0.1110  0.1387   ns
+16            agency_arc   Teacher  Janitor  0.1572  0.0719  1.3605  0.9276  1.8668  1674.0  0.0000  0.0000  ***
+17            agency_arc     Nurse   Doctor  0.1527  0.1316  0.2999 -0.1126  0.7385  1170.0  0.2052  0.2487   ns
+18            agency_arc     Nurse  Janitor  0.1527  0.0719  1.1836  0.7783  1.6422  1666.5  0.0000  0.0000  ***
+19            agency_arc    Doctor  Janitor  0.1316  0.0719  0.9892  0.5748  1.5079  1620.0  0.0000  0.0000  ***
+20  agency_quality_score  Engineer  Teacher  0.4225  0.4159  0.4932  0.0627  1.0092  1349.5  0.0066  0.0110    *
+21  agency_quality_score  Engineer    Nurse  0.4225  0.4311 -0.6984 -1.1610 -0.2795   632.0  0.0022  0.0038   **
+22  agency_quality_score  Engineer   Doctor  0.4225  0.4206  0.1432 -0.2579  0.5741  1124.0  0.3703  0.3990   ns
+23  agency_quality_score  Engineer  Janitor  0.4225  0.4042  1.6855  1.2454  2.2211  1772.5  0.0000  0.0000  ***
+24  agency_quality_score   Teacher    Nurse  0.4159  0.4311 -1.1472 -1.8131 -0.6541   397.5  0.0000  0.0000  ***
+25  agency_quality_score   Teacher   Doctor  0.4159  0.4206 -0.3273 -0.7917  0.0945   785.0  0.0669  0.0956   ns
+26  agency_quality_score   Teacher  Janitor  0.4159  0.4042  0.9858  0.6181  1.3803  1558.5  0.0000  0.0000  ***
+27  agency_quality_score     Nurse   Doctor  0.4311  0.4206  0.7920  0.3522  1.3043  1474.0  0.0002  0.0004  ***
+28  agency_quality_score     Nurse  Janitor  0.4311  0.4042  2.5040  1.9741  3.2493  1939.0  0.0000  0.0000  ***
+29  agency_quality_score    Doctor  Janitor  0.4206  0.4042  1.3706  0.9710  1.8454  1694.0  0.0000  0.0000  ***
+30    concreteness_score  Engineer  Teacher  0.4642  0.4375  3.4796  2.9134  4.2976  2010.5  0.0000  0.0000  ***
+31    concreteness_score  Engineer    Nurse  0.4642  0.4511  1.9343  1.5124  2.4965  1838.5  0.0000  0.0000  ***
+32    concreteness_score  Engineer   Doctor  0.4642  0.4533  1.6075  1.1702  2.1454  1757.0  0.0000  0.0000  ***
+33    concreteness_score  Engineer  Janitor  0.4642  0.4163  7.4713  6.7053  8.7649  2025.0  0.0000  0.0000  ***
+34    concreteness_score   Teacher    Nurse  0.4375  0.4511 -2.0568 -2.7699 -1.5527   169.0  0.0000  0.0000  ***
+35    concreteness_score   Teacher   Doctor  0.4375  0.4533 -2.3876 -3.1194 -1.8337   117.5  0.0000  0.0000  ***
+36    concreteness_score   Teacher  Janitor  0.4375  0.4163  3.3802  2.9401  4.0374  2022.0  0.0000  0.0000  ***
+37    concreteness_score     Nurse   Doctor  0.4511  0.4533 -0.3970 -0.8217  0.0309   795.5  0.0804  0.1072   ns
+38    concreteness_score     Nurse  Janitor  0.4511  0.4163  6.8189  6.1188  7.9079  2025.0  0.0000  0.0000  ***
+39    concreteness_score    Doctor  Janitor  0.4533  0.4163  7.2417  6.4745  8.5218  2025.0  0.0000  0.0000  ***
+
+Gender P3 pairwise:
+            g1      g2   mean1   mean2       d   ci_lo   ci_hi       p       q
+0  Non-Binary    Male  0.4259  0.4135  0.8321  0.5041  1.2136  0.0000  0.0000
+1  Non-Binary  Female  0.4259  0.4172  0.5710  0.2339  0.9235  0.0014  0.0020
+2      Female    Male  0.4172  0.4135  0.2868 -0.0377  0.6180  0.1004  0.1004
+P3 gender x profession:
+ gender      Female    Male  Non-Binary
+profession                            
+Doctor      0.4184  0.4154      0.4278
+Engineer    0.4210  0.4170      0.4295
+Janitor     0.4067  0.3981      0.4078
+Nurse       0.4281  0.4273      0.4380
+Teacher     0.4118  0.4094      0.4264 
+NB highest in 5 of 5 professions
+P3 gender x model:
+ gender      Female    Male  Non-Binary
+model_name                            
+gemma       0.4215  0.4183      0.4286
+llama3      0.4071  0.4053      0.4137
+mistral     0.4230  0.4168      0.4355 
+NB highest in 3 of 3 models
+
+Pronoun rates per 100 words by gender:
+             they_rate  heshe_rate
+gender                           
+Female           0.27        2.72
+Male             0.25        2.96
+Non-Binary       2.17        0.12
+Explicit identity marking by gender (share of stories):
+             mentions_nonbinary  mentions_male  mentions_female  identity_acceptance_vocab
+gender                                                                                   
+Female                   0.000          0.095            0.399                      0.149
+Male                     0.000          0.427            0.181                      0.125
+Non-Binary               0.903          0.069            0.125                      0.702
+P1 Gemma vs Llama 3: d = -2.75
+
+Cohen's d on units vs single stories (Table B6):
+                 measure              contrast  d_units  d_stories
+0       sentiment_score   Engineer vs Janitor     1.42       0.77
+1            agency_arc   Engineer vs Janitor     1.45       0.42
+2  agency_quality_score   Engineer vs Janitor     1.69       0.66
+3    concreteness_score   Engineer vs Janitor     7.47       3.15
+4  agency_quality_score    Non-Binary vs Male     0.83       0.42
+5  agency_quality_score  Non-Binary vs Female     0.57       0.28
+
+Additive models (Type II, permutation p, BH over 16):
+                  measure       factor  df  df_resid         F  p_param  p_perm  partial_eta2      R2  q_perm
+0        sentiment_score   model_name   2       212  297.7613   0.0000  0.0005        0.7375  0.7834  0.0007
+1        sentiment_score       gender   2       212   11.0927   0.0000  0.0005        0.0947  0.7834  0.0007
+2        sentiment_score  nationality   4       212    0.1511   0.9624  0.9585        0.0028  0.7834  0.9585
+3        sentiment_score   profession   4       212   37.0947   0.0000  0.0005        0.4117  0.7834  0.0007
+4             agency_arc   model_name   2       212   10.3770   0.0001  0.0005        0.0892  0.3205  0.0007
+5             agency_arc       gender   2       212    0.5524   0.5764  0.5702        0.0052  0.3205  0.6082
+6             agency_arc  nationality   4       212    3.2622   0.0127  0.0145        0.0580  0.3205  0.0193
+7             agency_arc   profession   4       212   16.2661   0.0000  0.0005        0.2348  0.3205  0.0007
+8   agency_quality_score   model_name   2       212   77.0927   0.0000  0.0005        0.4211  0.6899  0.0007
+9   agency_quality_score       gender   2       212   39.8426   0.0000  0.0005        0.2732  0.6899  0.0007
+10  agency_quality_score  nationality   4       212    2.2409   0.0658  0.0680        0.0406  0.6899  0.0837
+11  agency_quality_score   profession   4       212   57.2129   0.0000  0.0005        0.5191  0.6899  0.0007
+12    concreteness_score   model_name   2       212   11.2273   0.0000  0.0005        0.0958  0.9008  0.0007
+13    concreteness_score       gender   2       212   15.7616   0.0000  0.0005        0.1294  0.9008  0.0007
+14    concreteness_score  nationality   4       212    1.1830   0.3193  0.3113        0.0218  0.9008  0.3558
+15    concreteness_score   profession   4       212  466.4127   0.0000  0.0005        0.8980  0.9008  0.0007
+
+Interaction tests (BH over 12):
+                  measure                   interaction  df  df_resid       F       p       q
+0        sentiment_score       C(gender):C(profession)   8       204  1.1701  0.3188  0.7650
+1        sentiment_score  C(nationality):C(profession)  16       196  1.1753  0.2906  0.7650
+2        sentiment_score      C(gender):C(nationality)   8       204  0.6255  0.7559  0.8483
+3             agency_arc       C(gender):C(profession)   8       204  0.6600  0.7263  0.8483
+4             agency_arc  C(nationality):C(profession)  16       196  0.3734  0.9871  0.9871
+5             agency_arc      C(gender):C(nationality)   8       204  1.0053  0.4332  0.7941
+6   agency_quality_score       C(gender):C(profession)   8       204  1.3115  0.2394  0.7650
+7   agency_quality_score  C(nationality):C(profession)  16       196  0.9955  0.4632  0.7941
+8   agency_quality_score      C(gender):C(nationality)   8       204  0.5996  0.7776  0.8483
+9     concreteness_score       C(gender):C(profession)   8       204  3.1329  0.0023  0.0277
+10    concreteness_score  C(nationality):C(profession)  16       196  1.5285  0.0927  0.5562
+11    concreteness_score      C(gender):C(nationality)   8       204  0.7508  0.6466  0.8483
+
+P2 nationality x profession cells:
+ profession   Engineer  Teacher  Nurse  Doctor  Janitor
+nationality                                           
+American        0.163    0.129  0.135   0.124    0.059
+Chinese         0.160    0.136  0.130   0.115    0.044
+German          0.188    0.174  0.185   0.158    0.080
+Indian          0.167    0.151  0.142   0.127    0.104
+Nigerian        0.181    0.196  0.171   0.134    0.074
+spread across nationalities per profession: {'Engineer': 0.028, 'Teacher': 0.068, 'Nurse': 0.054, 'Doctor': 0.043, 'Janitor': 0.06}
+
+Additive residuals (bootstrap 95% CI):
+                         residual  ci_lo  ci_hi  observed  predicted
+nationality profession                                             
+American    Teacher       -0.013 -0.047  0.023     0.129      0.142
+Nigerian    Janitor       -0.013 -0.038  0.013     0.074      0.086
+German      Janitor       -0.012 -0.047  0.027     0.080      0.092
+Nigerian    Doctor        -0.011 -0.040  0.015     0.134      0.146
+Indian      Nurse         -0.011 -0.040  0.018     0.142      0.154
+Chinese     Janitor       -0.008 -0.038  0.019     0.044      0.052
+Indian      Teacher       -0.008 -0.032  0.018     0.151      0.158
+            Doctor        -0.006 -0.028  0.017     0.127      0.133
+            Engineer      -0.006 -0.037  0.026     0.167      0.173
+Nigerian    Engineer      -0.005 -0.046  0.038     0.181      0.186
+German      Engineer      -0.004 -0.047  0.041     0.188      0.192
+American    Nurse         -0.003 -0.040  0.041     0.135      0.137
+German      Teacher       -0.003 -0.048  0.040     0.174      0.177
+Chinese     Nurse         -0.002 -0.039  0.033     0.130      0.133
+            Teacher       -0.001 -0.033  0.030     0.136      0.137
+American    Janitor        0.002 -0.024  0.027     0.059      0.057
+Chinese     Doctor         0.004 -0.030  0.041     0.115      0.112
+Nigerian    Nurse          0.004 -0.041  0.047     0.171      0.167
+German      Doctor         0.006 -0.025  0.043     0.158      0.152
+American    Engineer       0.006 -0.031  0.046     0.163      0.157
+            Doctor         0.008 -0.033  0.043     0.124      0.116
+Chinese     Engineer       0.008 -0.030  0.047     0.160      0.152
+German      Nurse          0.012 -0.023  0.048     0.185      0.173
+Nigerian    Teacher        0.025 -0.003  0.053     0.196      0.171
+Indian      Janitor        0.031  0.005  0.057     0.104      0.073
+CIs excluding zero: 1 of 25
+marginal effects: nationality {'American': -0.015, 'Chinese': -0.02, 'German': 0.02, 'Indian': 0.001, 'Nigerian': 0.014} | profession {'Engineer': 0.035, 'Teacher': 0.02, 'Nurse': 0.016, 'Doctor': -0.006, 'Janitor': -0.065} | grand mean 0.137
+
+H2 correlations (BH over 11 per column):
+         group    n  rho_pooled  p_pooled  rho_model_adjusted  p_adjusted  rho_gemma  rho_llama3  rho_mistral  q_pooled  q_adjusted
+0   All units  225       0.049     0.467               0.368       0.000      0.510       0.455        0.293     0.642       0.000
+1    Engineer   45      -0.494     0.001              -0.032       0.834     -0.186       0.029        0.111     0.006       0.834
+2     Teacher   45      -0.249     0.099              -0.105       0.492     -0.196       0.200       -0.343     0.364       0.541
+3       Nurse   45      -0.114     0.455               0.187       0.219      0.596       0.318       -0.171     0.642       0.319
+4      Doctor   45      -0.058     0.703               0.182       0.232     -0.202       0.596        0.259     0.859       0.319
+5     Janitor   45       0.158     0.301               0.208       0.171      0.271       0.077        0.396     0.642       0.313
+6    American   45      -0.031     0.841               0.229       0.131      0.536       0.079        0.147     0.925       0.288
+7     Chinese   45       0.371     0.012               0.511       0.000      0.579       0.693        0.311     0.067       0.001
+8      German   45      -0.196     0.197               0.159       0.297      0.481       0.364        0.007     0.542       0.363
+9      Indian   45       0.122     0.423               0.451       0.002      0.363       0.436        0.609     0.642       0.005
+10   Nigerian   45       0.008     0.959               0.511       0.000      0.804       0.508        0.443     0.959       0.001
+story-level rho = 0.052 (p=0.00054) {'gemma3:4b': np.float64(0.136), 'llama3': np.float64(0.024), 'mistral': np.float64(0.058)}
+Engineer units, model means:
+             sentiment_score  agency_arc
+model_name                             
+gemma                 0.777       0.245
+llama3                0.808       0.137
+mistral               0.809       0.134
+
+Opening-third reception scene share by profession: {'Doctor': 0.663, 'Engineer': 0.841, 'Janitor': 0.652, 'Nurse': 0.75, 'Teacher': 0.847}
+Act I agency / P2 by reception:
+            agency_start  agency_arc
+reception                          
+False             0.831       0.068
+True              0.738       0.160
+P2 by profession x reception:
+ reception   False  True 
+profession              
+Doctor      0.094  0.151
+Engineer    0.086  0.188
+Janitor     0.010  0.105
+Nurse       0.082  0.176
+Teacher     0.102  0.167
+point-biserial r = 0.166, p = 4.3e-29
+cleaning-tool vocabulary share by profession: {'Doctor': 0.0, 'Engineer': 0.0, 'Janitor': 0.68, 'Nurse': 0.0, 'Teacher': 0.0}
+
+P5 label distribution: {'Professional_Authority': 0.701, 'Institutional_Subordination': 0.198, 'Adversity_Framing': 0.088, 'Domestic_Relegation': 0.011, 'Cultural_Tokenism': 0.002, 'Invisible_Competence': 0.0}
+taxonomy_label  Adversity_Framing  Cultural_Tokenism  Domestic_Relegation  Institutional_Subordination  Invisible_Competence  Professional_Authority
+profession                                                                                                                                          
+Engineer                    0.061              0.000                0.017                        0.087                 0.000                   0.836
+Teacher                     0.127              0.001                0.012                        0.134                 0.001                   0.724
+Nurse                       0.088              0.006                0.010                        0.178                 0.000                   0.719
+Doctor                      0.097              0.001                0.012                        0.100                 0.000                   0.790
+Janitor                     0.068              0.003                0.002                        0.489                 0.000                   0.438
+
+Done. Results in analysis/results | figures in figures
+EXIT 0

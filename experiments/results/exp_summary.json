@@ -1,0 +1,1151 @@
+{
+ "exp1": [
+  {
+   "label": "Gemma 3 4B",
+   "stories": 1500,
+   "per_persona": 20.0,
+   "sentiment_score_eta2_prof": 0.6494807282363293,
+   "sentiment_score_p_prof": 4.672779204009126e-10,
+   "sentiment_score_lowest": "Doctor",
+   "sentiment_score_janitor": 0.7195266666666666,
+   "sentiment_score_others": 0.7474508333333332,
+   "agency_arc_eta2_prof": 0.32078103990077483,
+   "agency_arc_p_prof": 2.561913091505548e-05,
+   "agency_arc_lowest": "Janitor",
+   "agency_arc_janitor": 0.07160000000000001,
+   "agency_arc_others": 0.18394166666666667,
+   "agency_quality_score_eta2_prof": 0.6069688110350734,
+   "agency_quality_score_p_prof": 1.9494023452412744e-09,
+   "agency_quality_score_lowest": "Janitor",
+   "agency_quality_score_janitor": 0.40636666666666665,
+   "agency_quality_score_others": 0.42689999999999995,
+   "concreteness_score_eta2_prof": 0.901588024268539,
+   "concreteness_score_p_prof": 9.236652341807792e-14,
+   "concreteness_score_lowest": "Janitor",
+   "concreteness_score_janitor": 0.4185,
+   "concreteness_score_others": 0.45388333333333336,
+   "d_eng_jan_P2": 2.263516426280998,
+   "d_others_jan_P2": 1.3052290428613624,
+   "p_others_jan_P2": 0.0001643137558310868,
+   "d_nb_Male_P3": 0.7943996270923949,
+   "p_nb_Male_P3": 0.003712244772292053,
+   "d_nb_Female_P3": 0.5225151453237259,
+   "p_nb_Female_P3": 0.037801303690589295,
+   "P3_by_gender": [
+    0.418,
+    0.421,
+    0.429
+   ],
+   "p_gender_P2": 0.7878960449760094,
+   "tone_mean": 0.741866,
+   "tone_min": 0.347
+  },
+  {
+   "label": "Llama 3 8B",
+   "stories": 1500,
+   "per_persona": 20.0,
+   "sentiment_score_eta2_prof": 0.5128993367784819,
+   "sentiment_score_p_prof": 4.53313200137965e-08,
+   "sentiment_score_lowest": "Janitor",
+   "sentiment_score_janitor": 0.7875233333333332,
+   "sentiment_score_others": 0.8114691666666666,
+   "agency_arc_eta2_prof": 0.26943502468917535,
+   "agency_arc_p_prof": 0.00013501903521447245,
+   "agency_arc_lowest": "Janitor",
+   "agency_arc_janitor": 0.07183333333333335,
+   "agency_arc_others": 0.123225,
+   "agency_quality_score_eta2_prof": 0.3115813888860646,
+   "agency_quality_score_p_prof": 3.45509658594626e-05,
+   "agency_quality_score_lowest": "Janitor",
+   "agency_quality_score_janitor": 0.39976666666666666,
+   "agency_quality_score_others": 0.4109083333333334,
+   "concreteness_score_eta2_prof": 0.7871099869739248,
+   "concreteness_score_p_prof": 4.488410358385374e-12,
+   "concreteness_score_lowest": "Janitor",
+   "concreteness_score_janitor": 0.41276666666666667,
+   "concreteness_score_others": 0.4498333333333333,
+   "d_eng_jan_P2": 1.761909165082268,
+   "d_others_jan_P2": 1.3894113944253716,
+   "p_others_jan_P2": 5.981666906739052e-05,
+   "d_nb_Male_P3": 0.7493489152801461,
+   "p_nb_Male_P3": 0.016094631365970672,
+   "d_nb_Female_P3": 0.6820102739754951,
+   "p_nb_Female_P3": 0.04349105271429323,
+   "P3_by_gender": [
+    0.405,
+    0.407,
+    0.414
+   ],
+   "p_gender_P2": 0.2860954243875943,
+   "tone_mean": 0.80668,
+   "tone_min": 0.603
+  },
+  {
+   "label": "Mistral 7B",
+   "stories": 1500,
+   "per_persona": 20.0,
+   "sentiment_score_eta2_prof": 0.6766209639234861,
+   "sentiment_score_p_prof": 1.87403974870477e-10,
+   "sentiment_score_lowest": "Janitor",
+   "sentiment_score_janitor": 0.7701966666666666,
+   "sentiment_score_others": 0.7972966666666665,
+   "agency_arc_eta2_prof": 0.25088529059278336,
+   "agency_arc_p_prof": 0.0002449397330507666,
+   "agency_arc_lowest": "Janitor",
+   "agency_arc_janitor": 0.07236666666666666,
+   "agency_arc_others": 0.15304166666666666,
+   "agency_quality_score_eta2_prof": 0.4240241910671422,
+   "agency_quality_score_p_prof": 8.660215005466852e-07,
+   "agency_quality_score_lowest": "Janitor",
+   "agency_quality_score_janitor": 0.40646666666666664,
+   "agency_quality_score_others": 0.42973333333333336,
+   "concreteness_score_eta2_prof": 0.7838825086962594,
+   "concreteness_score_p_prof": 5.0065934993673486e-12,
+   "concreteness_score_lowest": "Janitor",
+   "concreteness_score_janitor": 0.41773333333333335,
+   "concreteness_score_others": 0.45079166666666665,
+   "d_eng_jan_P2": 1.0602589111288303,
+   "d_others_jan_P2": 1.3579029154911444,
+   "p_others_jan_P2": 4.255977182488392e-05,
+   "d_nb_Male_P3": 1.2731403111872406,
+   "p_nb_Male_P3": 0.00016004483218904367,
+   "d_nb_Female_P3": 0.8223501634563198,
+   "p_nb_Female_P3": 0.003178340472222609,
+   "P3_by_gender": [
+    0.417,
+    0.423,
+    0.435
+   ],
+   "p_gender_P2": 0.9206977664708232,
+   "tone_mean": 0.7918766666666667,
+   "tone_min": 0.602
+  },
+  {
+   "label": "Gemma 3 27B",
+   "stories": 300,
+   "per_persona": 4.0,
+   "sentiment_score_eta2_prof": 0.13518761410247246,
+   "sentiment_score_p_prof": 0.00922115479498647,
+   "sentiment_score_lowest": "Doctor",
+   "sentiment_score_janitor": 0.6375333333333334,
+   "sentiment_score_others": 0.6286750000000001,
+   "agency_arc_eta2_prof": 0.15144681139388022,
+   "agency_arc_p_prof": 0.005603824480327825,
+   "agency_arc_lowest": "Janitor",
+   "agency_arc_janitor": 0.0745,
+   "agency_arc_others": 0.154125,
+   "agency_quality_score_eta2_prof": 0.27902452558437474,
+   "agency_quality_score_p_prof": 9.91294386204196e-05,
+   "agency_quality_score_lowest": "Janitor",
+   "agency_quality_score_janitor": 0.39299999999999996,
+   "agency_quality_score_others": 0.41479166666666667,
+   "concreteness_score_eta2_prof": 0.8706257283625836,
+   "concreteness_score_p_prof": 2.6443148922565387e-13,
+   "concreteness_score_lowest": "Janitor",
+   "concreteness_score_janitor": 0.4026666666666667,
+   "concreteness_score_others": 0.44329166666666653,
+   "d_eng_jan_P2": 0.9413716977297063,
+   "d_others_jan_P2": 0.712917480968047,
+   "p_others_jan_P2": 0.0039607900534602315,
+   "d_nb_Male_P3": 0.19070282527421906,
+   "p_nb_Male_P3": 0.345873361600356,
+   "d_nb_Female_P3": 0.03320388300611624,
+   "p_nb_Female_P3": 0.8305652901501296,
+   "P3_by_gender": [
+    0.409,
+    0.411,
+    0.412
+   ],
+   "p_gender_P2": 0.2214483859810976,
+   "tone_mean": 0.6304466666666667,
+   "tone_min": 0.292,
+   "neg_sentence_share": 0.08370401207019207,
+   "reception_by_prof": [
+    0.97,
+    0.83,
+    0.72,
+    0.63,
+    0.55
+   ]
+  },
+  {
+   "label": "Gemma 4 31B",
+   "stories": 300,
+   "per_persona": 4.0,
+   "sentiment_score_eta2_prof": 0.09880708172023311,
+   "sentiment_score_p_prof": 0.027518691665467755,
+   "sentiment_score_lowest": "Janitor",
+   "sentiment_score_janitor": 0.6802833333333334,
+   "sentiment_score_others": 0.7062083333333333,
+   "agency_arc_eta2_prof": 0.0,
+   "agency_arc_p_prof": 0.8830578829451332,
+   "agency_arc_lowest": "Nurse",
+   "agency_arc_janitor": 0.1115,
+   "agency_arc_others": 0.09274999999999999,
+   "agency_quality_score_eta2_prof": 0.22075005176352377,
+   "agency_quality_score_p_prof": 0.0006403103132420808,
+   "agency_quality_score_lowest": "Janitor",
+   "agency_quality_score_janitor": 0.391,
+   "agency_quality_score_others": 0.4057916666666666,
+   "concreteness_score_eta2_prof": 0.5810531710685873,
+   "concreteness_score_p_prof": 4.648009096723484e-09,
+   "concreteness_score_lowest": "Janitor",
+   "concreteness_score_janitor": 0.4135,
+   "concreteness_score_others": 0.44850000000000007,
+   "d_eng_jan_P2": -0.2124867559665231,
+   "d_others_jan_P2": -0.18152579299075874,
+   "p_others_jan_P2": 0.5734442009807683,
+   "d_nb_Male_P3": 0.5058820947459675,
+   "p_nb_Male_P3": 0.14775843442181663,
+   "d_nb_Female_P3": 0.7775234021086548,
+   "p_nb_Female_P3": 0.015188033055620345,
+   "P3_by_gender": [
+    0.402,
+    0.397,
+    0.409
+   ],
+   "p_gender_P2": 0.02069639328651277,
+   "tone_mean": 0.7010233333333334,
+   "tone_min": 0.363,
+   "neg_sentence_share": 0.04490937084540151,
+   "reception_by_prof": [
+    0.93,
+    0.78,
+    0.7,
+    0.42,
+    0.18
+   ]
+  },
+  {
+   "label": "gpt-oss 20B",
+   "stories": 300,
+   "per_persona": 4.0,
+   "sentiment_score_eta2_prof": 0.09211965287416561,
+   "sentiment_score_p_prof": 0.033515579702172796,
+   "sentiment_score_lowest": "Janitor",
+   "sentiment_score_janitor": 0.7770833333333333,
+   "sentiment_score_others": 0.7943999999999999,
+   "agency_arc_eta2_prof": 0.06774694864785287,
+   "agency_arc_p_prof": 0.06787398668952768,
+   "agency_arc_lowest": "Janitor",
+   "agency_arc_janitor": 0.03233333333333333,
+   "agency_arc_others": 0.06116666666666667,
+   "agency_quality_score_eta2_prof": 0.48255996670386647,
+   "agency_quality_score_p_prof": 1.2444500927688563e-07,
+   "agency_quality_score_lowest": "Janitor",
+   "agency_quality_score_janitor": 0.377,
+   "agency_quality_score_others": 0.40512499999999996,
+   "concreteness_score_eta2_prof": 0.8350662631545367,
+   "concreteness_score_p_prof": 8.838361546395519e-13,
+   "concreteness_score_lowest": "Janitor",
+   "concreteness_score_janitor": 0.4088333333333333,
+   "concreteness_score_others": 0.45175,
+   "d_eng_jan_P2": 0.8595163029472555,
+   "d_others_jan_P2": 0.45943187547180125,
+   "p_others_jan_P2": 0.12766497759146186,
+   "d_nb_Male_P3": 0.19136339329214355,
+   "p_nb_Male_P3": 0.5467628689976993,
+   "d_nb_Female_P3": 0.08498365855987766,
+   "p_nb_Female_P3": 0.8231605318611314,
+   "P3_by_gender": [
+    0.398,
+    0.4,
+    0.401
+   ],
+   "p_gender_P2": 0.047470835193692676,
+   "tone_mean": 0.7909366666666667,
+   "tone_min": 0.641,
+   "neg_sentence_share": 0.011578058086715788,
+   "reception_by_prof": [
+    0.92,
+    0.93,
+    0.6,
+    0.78,
+    0.55
+   ]
+  },
+  {
+   "label": "Mistral Small 3.2 24B",
+   "stories": 300,
+   "per_persona": 4.0,
+   "sentiment_score_eta2_prof": 0.1014749432800107,
+   "sentiment_score_p_prof": 0.025427851057945115,
+   "sentiment_score_lowest": "Janitor",
+   "sentiment_score_janitor": 0.7792,
+   "sentiment_score_others": 0.7915916666666667,
+   "agency_arc_eta2_prof": 0.031494085135298965,
+   "agency_arc_p_prof": 0.18438175799924472,
+   "agency_arc_lowest": "Janitor",
+   "agency_arc_janitor": 0.082,
+   "agency_arc_others": 0.12845833333333334,
+   "agency_quality_score_eta2_prof": 0.5401197403091297,
+   "agency_quality_score_p_prof": 1.827900092304588e-08,
+   "agency_quality_score_lowest": "Janitor",
+   "agency_quality_score_janitor": 0.36916666666666664,
+   "agency_quality_score_others": 0.3989166666666667,
+   "concreteness_score_eta2_prof": 0.7814596133103361,
+   "concreteness_score_p_prof": 5.434496982751082e-12,
+   "concreteness_score_lowest": "Janitor",
+   "concreteness_score_janitor": 0.3893333333333333,
+   "concreteness_score_others": 0.433625,
+   "d_eng_jan_P2": 1.0334655752032573,
+   "d_others_jan_P2": 0.5291647377355939,
+   "p_others_jan_P2": 0.062724401394749,
+   "d_nb_Male_P3": -0.6394174629831196,
+   "p_nb_Male_P3": 0.01869065539708446,
+   "d_nb_Female_P3": -0.49447584347665513,
+   "p_nb_Female_P3": 0.09472688283553715,
+   "P3_by_gender": [
+    0.399,
+    0.394,
+    0.386
+   ],
+   "p_gender_P2": 0.28954334950421984,
+   "tone_mean": 0.7891133333333333,
+   "tone_min": 0.574,
+   "neg_sentence_share": 0.010057226573638594,
+   "reception_by_prof": [
+    0.9,
+    0.85,
+    0.87,
+    0.6,
+    0.78
+   ]
+  },
+  {
+   "label": "Qwen 3.8 27B",
+   "stories": 300,
+   "per_persona": 4.0,
+   "sentiment_score_eta2_prof": 0.2224179117419132,
+   "sentiment_score_p_prof": 0.0006072893298384555,
+   "sentiment_score_lowest": "Doctor",
+   "sentiment_score_janitor": 0.7015999999999999,
+   "sentiment_score_others": 0.7194458333333333,
+   "agency_arc_eta2_prof": 0.27567413176484273,
+   "agency_arc_p_prof": 0.0001104388591883788,
+   "agency_arc_lowest": "Janitor",
+   "agency_arc_janitor": 0.007000000000000001,
+   "agency_arc_others": 0.09783333333333331,
+   "agency_quality_score_eta2_prof": 0.2997940261889136,
+   "agency_quality_score_p_prof": 5.064675583429143e-05,
+   "agency_quality_score_lowest": "Janitor",
+   "agency_quality_score_janitor": 0.38816666666666666,
+   "agency_quality_score_others": 0.4075,
+   "concreteness_score_eta2_prof": 0.6893459748244251,
+   "concreteness_score_p_prof": 1.2205180203350684e-10,
+   "concreteness_score_lowest": "Janitor",
+   "concreteness_score_janitor": 0.4121666666666667,
+   "concreteness_score_others": 0.440875,
+   "d_eng_jan_P2": 2.0775029466494046,
+   "d_others_jan_P2": 1.0565015486392846,
+   "p_others_jan_P2": 0.001317032510057642,
+   "d_nb_Male_P3": 0.04033091340848932,
+   "p_nb_Male_P3": 0.8688443801185766,
+   "d_nb_Female_P3": 0.054460689408081554,
+   "p_nb_Female_P3": 0.938022718179711,
+   "P3_by_gender": [
+    0.404,
+    0.403,
+    0.404
+   ],
+   "p_gender_P2": 0.9994106078249161,
+   "tone_mean": 0.7158766666666666,
+   "tone_min": 0.317,
+   "neg_sentence_share": 0.03517831746287176,
+   "reception_by_prof": [
+    0.75,
+    0.45,
+    0.43,
+    0.33,
+    0.08
+   ]
+  }
+ ],
+ "exp1_tone_eta2_model": 0.7653137795485937,
+ "exp1_tone_eta2_prof": 0.011511058892411637,
+ "exp1_neg_story_share": 0.0,
+ "exp2": {
+  "original": {
+   "stories": 300,
+   "janitor_gap_P2": [
+    -0.11416666666666664,
+    -0.17025625,
+    -0.04739479166666677
+   ],
+   "P2_by_prof": [
+    0.127,
+    0.13,
+    0.147,
+    0.158,
+    0.026
+   ],
+   "eta2_prof_P2": 0.09761120301536266,
+   "reception_by_prof": [
+    0.77,
+    0.78,
+    0.83,
+    0.68,
+    0.7
+   ],
+   "act1_by_prof": [
+    0.748,
+    0.738,
+    0.734,
+    0.736,
+    0.849
+   ],
+   "tone": 0.7945566666666667,
+   "P3_jan_gap": [
+    -0.02454166666666674,
+    -0.03300208333333336,
+    -0.016415625000000083
+   ]
+  },
+  "ordinary_day": {
+   "stories": 300,
+   "janitor_gap_P2": [
+    -0.050916666666666666,
+    -0.10816666666666666,
+    0.0029593750000000015
+   ],
+   "P2_by_prof": [
+    0.082,
+    0.186,
+    0.024,
+    0.01,
+    0.025
+   ],
+   "eta2_prof_P2": 0.11844198465317886,
+   "reception_by_prof": [
+    0.65,
+    0.75,
+    0.6,
+    0.8,
+    0.52
+   ],
+   "act1_by_prof": [
+    0.83,
+    0.743,
+    0.867,
+    0.87,
+    0.901
+   ],
+   "tone": 0.78189,
+   "P3_jan_gap": [
+    -0.04287500000000005,
+    -0.05233541666666662,
+    -0.033205208333333354
+   ]
+  },
+  "development": {
+   "stories": 300,
+   "janitor_gap_P2": [
+    -0.08433333333333333,
+    -0.15476875,
+    -0.01999375000000004
+   ],
+   "P2_by_prof": [
+    0.121,
+    0.138,
+    0.132,
+    0.238,
+    0.073
+   ],
+   "eta2_prof_P2": 0.072340549490154,
+   "reception_by_prof": [
+    0.85,
+    0.77,
+    0.78,
+    0.8,
+    0.67
+   ],
+   "act1_by_prof": [
+    0.742,
+    0.728,
+    0.706,
+    0.651,
+    0.778
+   ],
+   "tone": 0.8048933333333333,
+   "P3_jan_gap": [
+    -0.010124999999999829,
+    -0.015666666666666662,
+    -0.004413541666666589
+   ]
+  },
+  "interaction_F": 0.6086299513671475,
+  "interaction_p": 0.5450134912747517,
+  "interaction_df": [
+   2,
+   219
+  ]
+ },
+ "exp3": {
+  "qwen3:8b": {
+   "n_stories": 1125,
+   "n_units": 225,
+   "warmth_by_prof": [
+    5.93,
+    6.22,
+    6.36,
+    6.2,
+    5.88
+   ],
+   "warmth_by_gender": [
+    5.94,
+    6.18,
+    6.23
+   ],
+   "warmth_eta2_prof": 0.3370708981958444,
+   "warmth_p_prof": 4.281850266822798e-16,
+   "warmth_eta2_model": 0.11921625066913624,
+   "warmth_jan_gap": [
+    -0.2922222222222217,
+    -0.3788888888888877,
+    -0.21222222222222165
+   ],
+   "warmth_d_jan": 1.062481832776708,
+   "warmth_nb_vs_m_d": 0.9840323829798721,
+   "warmth_nb_vs_f_d": 0.15068034965928048,
+   "competence_by_prof": [
+    6.4,
+    6.26,
+    6.42,
+    6.73,
+    6.02
+   ],
+   "competence_by_gender": [
+    6.27,
+    6.37,
+    6.45
+   ],
+   "competence_eta2_prof": 0.23810402761378457,
+   "competence_p_prof": 1.6667383037386487e-11,
+   "competence_eta2_model": 0.3487083172550838,
+   "competence_jan_gap": [
+    -0.43555555555555525,
+    -0.5633611111111112,
+    -0.3022222222222233
+   ],
+   "competence_d_jan": 1.032846464466037,
+   "competence_nb_vs_m_d": 0.37483438644359046,
+   "competence_nb_vs_f_d": 0.16358871892882212,
+   "agency_by_prof": [
+    5.54,
+    5.39,
+    5.39,
+    5.73,
+    4.65
+   ],
+   "agency_by_gender": [
+    5.17,
+    5.32,
+    5.53
+   ],
+   "agency_eta2_prof": 0.3666315203618084,
+   "agency_p_prof": 1.7919641008855544e-17,
+   "agency_eta2_model": 0.252401896003964,
+   "agency_jan_gap": [
+    -0.8577777777777786,
+    -0.9878055555555563,
+    -0.7333333333333343
+   ],
+   "agency_d_jan": 1.956370322314244,
+   "agency_nb_vs_m_d": 0.6204684656844832,
+   "agency_nb_vs_f_d": 0.3623397307996341,
+   "development_by_prof": [
+    5.51,
+    5.45,
+    5.89,
+    5.75,
+    5.31
+   ],
+   "development_by_gender": [
+    5.6,
+    5.64,
+    5.5
+   ],
+   "development_eta2_prof": 0.1577061460362606,
+   "development_p_prof": 8.052409689932616e-08,
+   "development_eta2_model": 0.3319558504438939,
+   "development_jan_gap": [
+    -0.34222222222222154,
+    -0.5167222222222239,
+    -0.16886111111111105
+   ],
+   "development_d_jan": 0.6482059647223538,
+   "development_nb_vs_m_d": -0.18290035582834263,
+   "development_nb_vs_f_d": -0.2995751087523743,
+   "welcome_by_prof": [
+    6.79,
+    6.7,
+    6.79,
+    6.71,
+    6.28
+   ],
+   "welcome_by_gender": [
+    6.49,
+    6.71,
+    6.76
+   ],
+   "welcome_eta2_prof": 0.2454215324602619,
+   "welcome_p_prof": 7.65783167084835e-12,
+   "welcome_eta2_model": 0.044849561042396215,
+   "welcome_jan_gap": [
+    -0.46999999999999975,
+    -0.578888888888887,
+    -0.3533333333333335
+   ],
+   "welcome_d_jan": 1.4391921005558483,
+   "welcome_nb_vs_m_d": 0.818802713088312,
+   "welcome_nb_vs_f_d": 0.17053910136877226,
+   "rho_development_agency_arc": [
+    0.12285154796879899,
+    0.06584412904157974
+   ],
+   "rho_agency_agency_arc": [
+    0.2879796174519341,
+    1.1388850918028923e-05
+   ],
+   "rho_competence_agency_quality_score": [
+    0.5199432405143328,
+    5.5482615516177015e-17
+   ],
+   "rho_agency_agency_quality_score": [
+    0.5637956599927287,
+    2.809530522139013e-20
+   ],
+   "rho_warmth_sentiment_score": [
+    -0.10095514284779476,
+    0.13110661900129286
+   ],
+   "rho_welcome_agency_arc": [
+    0.07784007873902442,
+    0.2448850477014646
+   ]
+  },
+  "qwen3:32b": {
+   "n_stories": 600,
+   "n_units": 225,
+   "warmth_by_prof": [
+    5.41,
+    6.13,
+    6.24,
+    5.7,
+    5.81
+   ],
+   "warmth_by_gender": [
+    5.54,
+    5.98,
+    6.06
+   ],
+   "warmth_eta2_prof": 0.23110968264318305,
+   "warmth_p_prof": 3.502709162502356e-11,
+   "warmth_eta2_model": 0.07177345895755528,
+   "warmth_jan_gap": [
+    -0.058148148148146284,
+    -0.23680324074074105,
+    0.1144583333333325
+   ],
+   "warmth_d_jan": 0.1014497471701635,
+   "warmth_nb_vs_m_d": 0.9381362932132601,
+   "warmth_nb_vs_f_d": 0.15537360319761226,
+   "competence_by_prof": [
+    5.7,
+    5.96,
+    5.77,
+    5.99,
+    5.77
+   ],
+   "competence_by_gender": [
+    5.68,
+    5.79,
+    6.06
+   ],
+   "competence_eta2_prof": 0.01569296079174156,
+   "competence_p_prof": 0.11382435605410748,
+   "competence_eta2_model": 0.39275804100046524,
+   "competence_jan_gap": [
+    -0.08185185185185251,
+    -0.2641967592592606,
+    0.09214583333333282
+   ],
+   "competence_d_jan": 0.1379465656136292,
+   "competence_nb_vs_m_d": 0.6112585034809138,
+   "competence_nb_vs_f_d": 0.4090742110730626,
+   "agency_by_prof": [
+    5.07,
+    5.41,
+    4.94,
+    5.16,
+    4.62
+   ],
+   "agency_by_gender": [
+    4.75,
+    4.98,
+    5.39
+   ],
+   "agency_eta2_prof": 0.1348019058689175,
+   "agency_p_prof": 8.764136701965535e-07,
+   "agency_eta2_model": 0.27117618490457457,
+   "agency_jan_gap": [
+    -0.5285185185185179,
+    -0.692979166666666,
+    -0.36665277777777744
+   ],
+   "agency_d_jan": 0.8945697002951578,
+   "agency_nb_vs_m_d": 0.9281471631559217,
+   "agency_nb_vs_f_d": 0.5976517881434237,
+   "development_by_prof": [
+    5.15,
+    5.06,
+    5.48,
+    5.32,
+    4.91
+   ],
+   "development_by_gender": [
+    5.12,
+    5.18,
+    5.25
+   ],
+   "development_eta2_prof": 0.0944029973907036,
+   "development_p_prof": 5.599517034792027e-05,
+   "development_eta2_model": 0.30883989781017307,
+   "development_jan_gap": [
+    -0.337037037037037,
+    -0.5254699074074064,
+    -0.15615277777777817
+   ],
+   "development_d_jan": 0.5831246249373582,
+   "development_nb_vs_m_d": 0.19786708865157338,
+   "development_nb_vs_f_d": 0.12096118014653413,
+   "welcome_by_prof": [
+    6.0,
+    6.09,
+    6.06,
+    5.72,
+    5.7
+   ],
+   "welcome_by_gender": [
+    5.7,
+    5.9,
+    6.15
+   ],
+   "welcome_eta2_prof": 0.06941477563756268,
+   "welcome_p_prof": 0.0006951269446622979,
+   "welcome_eta2_model": 0.042446943174843266,
+   "welcome_jan_gap": [
+    -0.26592592592592545,
+    -0.4619444444444447,
+    -0.06331944444444462
+   ],
+   "welcome_d_jan": 0.4340552280654142,
+   "welcome_nb_vs_m_d": 0.7238910053476055,
+   "welcome_nb_vs_f_d": 0.41054728264717694,
+   "rho_development_agency_arc": [
+    0.20233431296185586,
+    0.0022905758965752233
+   ],
+   "rho_agency_agency_arc": [
+    0.1289651009312384,
+    0.0533870987111426
+   ],
+   "rho_competence_agency_quality_score": [
+    0.26737003271604864,
+    4.856721928693968e-05
+   ],
+   "rho_agency_agency_quality_score": [
+    0.3217045454235477,
+    8.206743562866725e-07
+   ],
+   "rho_warmth_sentiment_score": [
+    -0.04232827973876797,
+    0.527601897214356
+   ],
+   "rho_welcome_agency_arc": [
+    0.09133416282476028,
+    0.17217859590446122
+   ]
+  },
+  "granite3.3:8b": {
+   "n_stories": 1124,
+   "n_units": 225,
+   "warmth_by_prof": [
+    6.67,
+    6.87,
+    6.94,
+    6.8,
+    6.58
+   ],
+   "warmth_by_gender": [
+    6.6,
+    6.83,
+    6.88
+   ],
+   "warmth_eta2_prof": 0.23577531014986314,
+   "warmth_p_prof": 2.1344599429397498e-11,
+   "warmth_eta2_model": 0.012101167888939189,
+   "warmth_jan_gap": [
+    -0.2422222222222219,
+    -0.3455555555555545,
+    -0.14555555555555433
+   ],
+   "warmth_d_jan": 0.8858007918685978,
+   "warmth_nb_vs_m_d": 1.1566311743405875,
+   "warmth_nb_vs_f_d": 0.253235829130608,
+   "competence_by_prof": [
+    6.62,
+    6.64,
+    6.38,
+    6.78,
+    6.37
+   ],
+   "competence_by_gender": [
+    6.47,
+    6.55,
+    6.66
+   ],
+   "competence_eta2_prof": 0.2089053303808245,
+   "competence_p_prof": 3.682440372101217e-10,
+   "competence_eta2_model": 0.14958573239332604,
+   "competence_jan_gap": [
+    -0.23000000000000043,
+    -0.34447222222222273,
+    -0.12777777777777907
+   ],
+   "competence_d_jan": 0.6971015391495909,
+   "competence_nb_vs_m_d": 0.5581255629010288,
+   "competence_nb_vs_f_d": 0.34616757836065637,
+   "agency_by_prof": [
+    5.37,
+    5.63,
+    5.2,
+    5.63,
+    4.8
+   ],
+   "agency_by_gender": [
+    5.08,
+    5.29,
+    5.61
+   ],
+   "agency_eta2_prof": 0.34986547327834416,
+   "agency_p_prof": 1.0849091101996256e-16,
+   "agency_eta2_model": 0.14684728312483564,
+   "agency_jan_gap": [
+    -0.6624999999999996,
+    -0.7858402777777789,
+    -0.5391597222222222
+   ],
+   "agency_d_jan": 1.600091267514166,
+   "agency_nb_vs_m_d": 1.1228900382538773,
+   "agency_nb_vs_f_d": 0.6573176664461736,
+   "development_by_prof": [
+    5.98,
+    5.56,
+    6.38,
+    6.04,
+    5.74
+   ],
+   "development_by_gender": [
+    5.94,
+    5.98,
+    5.9
+   ],
+   "development_eta2_prof": 0.23041658998649392,
+   "development_p_prof": 3.7700598394042916e-11,
+   "development_eta2_model": 0.12348784850328079,
+   "development_jan_gap": [
+    -0.25333333333333385,
+    -0.42113888888888984,
+    -0.08888888888888943
+   ],
+   "development_d_jan": 0.47492689124722465,
+   "development_nb_vs_m_d": -0.06710403310230295,
+   "development_nb_vs_f_d": -0.1550810974633818,
+   "welcome_by_prof": [
+    6.84,
+    6.6,
+    6.65,
+    6.39,
+    6.36
+   ],
+   "welcome_by_gender": [
+    6.48,
+    6.63,
+    6.6
+   ],
+   "welcome_eta2_prof": 0.14196835924785542,
+   "welcome_p_prof": 4.160459256323695e-07,
+   "welcome_eta2_model": 0.23788990369212842,
+   "welcome_jan_gap": [
+    -0.2574999999999994,
+    -0.4250138888888896,
+    -0.1041319444444449
+   ],
+   "welcome_d_jan": 0.5419415223420622,
+   "welcome_nb_vs_m_d": 0.24052092776511336,
+   "welcome_nb_vs_f_d": -0.08535855823649047,
+   "rho_development_agency_arc": [
+    0.14994057577902625,
+    0.02449261824614517
+   ],
+   "rho_agency_agency_arc": [
+    0.1930469380554562,
+    0.0036494845892633557
+   ],
+   "rho_competence_agency_quality_score": [
+    0.41030524928048084,
+    1.50827752540113e-10
+   ],
+   "rho_agency_agency_quality_score": [
+    0.5202842731840791,
+    5.252090373734578e-17
+   ],
+   "rho_warmth_sentiment_score": [
+    0.19359977357489536,
+    0.0035516981798230855
+   ],
+   "rho_welcome_agency_arc": [
+    0.009654737507761723,
+    0.8854864192961525
+   ]
+  },
+  "agreement": {
+   "n": 1124,
+   "warmth": 0.3930964715449255,
+   "competence": 0.5370823027318347,
+   "agency": 0.6263801847915969,
+   "development": 0.4764049902301826,
+   "welcome": 0.5013425379592671,
+   "units": {
+    "warmth": 0.6453488832022384,
+    "competence": 0.6845375477562247,
+    "agency": 0.7962440686210748,
+    "development": 0.6588545447360804,
+    "welcome": 0.6395387372892345
+   },
+   "judges": [
+    "qwen3:8b",
+    "granite3.3:8b"
+   ]
+  },
+  "new": {
+   "exp1|gemma3:27b|original": {
+    "warmth": [
+     -0.4166666666666661,
+     -0.5541666666666671,
+     -0.27083333333333304
+    ],
+    "competence": [
+     -0.10416666666666607,
+     -0.25833333333333375,
+     0.04583333333333339
+    ],
+    "agency": [
+     -0.7541666666666664,
+     -0.8958333333333339,
+     -0.6082291666666673
+    ],
+    "development": [
+     -0.7166666666666668,
+     -0.8834375000000004,
+     -0.5416666666666661
+    ],
+    "welcome": [
+     -0.6208333333333336,
+     -0.8834375000000004,
+     -0.375
+    ]
+   },
+   "exp1|gemma4:31b|original": {
+    "warmth": [
+     -0.6791666666666663,
+     -0.8666666666666671,
+     -0.4833333333333334
+    ],
+    "competence": [
+     -0.33750000000000036,
+     -0.4708333333333332,
+     -0.2041666666666666
+    ],
+    "agency": [
+     -1.2166666666666668,
+     -1.4375,
+     -1.0083333333333329
+    ],
+    "development": [
+     -0.9458333333333337,
+     -1.1958333333333329,
+     -0.7041666666666666
+    ],
+    "welcome": [
+     -1.083333333333333,
+     -1.3999999999999995,
+     -0.7832291666666671
+    ]
+   },
+   "exp1|gpt-oss:20b|original": {
+    "warmth": [
+     -0.14583333333333304,
+     -0.24166666666666714,
+     -0.05833333333333357
+    ],
+    "competence": [
+     -0.20000000000000018,
+     -0.33333333333333304,
+     -0.07916666666666661
+    ],
+    "agency": [
+     -0.7291666666666661,
+     -0.9000000000000004,
+     -0.5583333333333336
+    ],
+    "development": [
+     -0.2041666666666666,
+     -0.39583333333333304,
+     0.0
+    ],
+    "welcome": [
+     -0.16666666666666696,
+     -0.3125,
+     -0.03322916666666712
+    ]
+   },
+   "exp1|mistral-small3.2:24b|original": {
+    "warmth": [
+     -0.6208333333333336,
+     -0.7749999999999995,
+     -0.47499999999999964
+    ],
+    "competence": [
+     -0.75,
+     -0.8959375000000006,
+     -0.5999999999999996
+    ],
+    "agency": [
+     -1.1124999999999998,
+     -1.229166666666667,
+     -0.9875000000000007
+    ],
+    "development": [
+     -0.6124999999999998,
+     -0.8208333333333337,
+     -0.4083333333333341
+    ],
+    "welcome": [
+     -0.9624999999999995,
+     -1.1541666666666668,
+     -0.7665625000000005
+    ]
+   },
+   "exp1|qwen3.8:27b|original": {
+    "warmth": [
+     -0.27083333333333304,
+     -0.4459375000000004,
+     -0.1040625
+    ],
+    "competence": [
+     -0.1416666666666666,
+     -0.28749999999999964,
+     0.0
+    ],
+    "agency": [
+     -0.8583333333333325,
+     -1.083333333333333,
+     -0.6083333333333334
+    ],
+    "development": [
+     -0.8875000000000002,
+     -1.1708333333333334,
+     -0.6124999999999998
+    ],
+    "welcome": [
+     -0.4500000000000002,
+     -0.7834375000000008,
+     -0.11249999999999982
+    ]
+   },
+   "exp2|mistral:7b|development": {
+    "warmth": [
+     -0.2958333333333334,
+     -0.4083333333333332,
+     -0.19156250000000033
+    ],
+    "competence": [
+     -0.6458333333333339,
+     -0.875,
+     -0.42916666666666714
+    ],
+    "agency": [
+     -0.8458333333333332,
+     -1.020833333333333,
+     -0.6791666666666671
+    ],
+    "development": [
+     -0.3416666666666668,
+     -0.5458333333333334,
+     -0.12083333333333357
+    ],
+    "welcome": [
+     -0.3166666666666673,
+     -0.4666666666666668,
+     -0.17906250000000015
+    ]
+   },
+   "exp2|mistral:7b|ordinary_day": {
+    "warmth": [
+     -0.33750000000000036,
+     -0.49166666666666625,
+     -0.1875
+    ],
+    "competence": [
+     -0.15000000000000036,
+     -0.25,
+     -0.06666666666666643
+    ],
+    "agency": [
+     -1.4375,
+     -1.583333333333334,
+     -1.291666666666667
+    ],
+    "development": [
+     -1.4416666666666664,
+     -1.5792708333333336,
+     -1.291666666666667
+    ],
+    "welcome": [
+     -0.36666666666666625,
+     -0.5125000000000002,
+     -0.21250000000000036
+    ]
+   },
+   "exp2|mistral:7b|original": {
+    "warmth": [
+     -0.24166666666666714,
+     -0.3583333333333334,
+     -0.10833333333333339
+    ],
+    "competence": [
+     -0.4833333333333334,
+     -0.6999999999999993,
+     -0.25833333333333375
+    ],
+    "agency": [
+     -0.9249999999999998,
+     -1.1291666666666664,
+     -0.7250000000000005
+    ],
+    "development": [
+     -0.7458333333333327,
+     -0.9625000000000004,
+     -0.541666666666667
+    ],
+    "welcome": [
+     -0.4708333333333332,
+     -0.6541666666666668,
+     -0.2958333333333334
+    ]
+   }
+  }
+ }
+}

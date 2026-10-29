@@ -1,0 +1,15 @@
+group,n,spearman_r,p
+Overall,225,0.0488,0.466591
+Profession: Engineer,45,-0.4942,0.00056
+Profession: Doctor,45,-0.0584,0.702965
+Profession: Nurse,45,-0.1141,0.455445
+Profession: Teacher,45,-0.2488,0.099296
+Profession: Janitor,45,0.1577,0.300797
+Gender: Male,75,-0.0795,0.497584
+Gender: Female,75,0.0737,0.529874
+Gender: Non-Binary,75,0.1274,0.276155
+Nationality: American,45,-0.0308,0.840823
+Nationality: German,45,-0.1959,0.197075
+Nationality: Indian,45,0.1224,0.423285
+Nationality: Nigerian,45,0.0079,0.958896
+Nationality: Chinese,45,0.3708,0.012148
