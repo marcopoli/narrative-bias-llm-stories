@@ -21,7 +21,7 @@ def f(x, k=2, sign=False):
     if x is None or (isinstance(x, float) and np.isnan(x)): return "–"
     s = f"{x:+.{k}f}" if sign else f"{x:.{k}f}"
     return s.replace("-", "−")
-def fp(p): return "< .001" if p < .001 else f"{p:.3f}".replace("0.", ".", 1)
+def fp(p): return "< 0.001" if p < 0.001 else f"{p:.3f}"
 def ci(g, k=2):
     # janitor gap with 95% CI; the arrow marks a CI that excludes zero (down: lower for janitors, up: higher)
     arrow = "↓ " if g[2] < 0 else "↑ " if g[1] > 0 else ""
@@ -43,10 +43,10 @@ for m, lab in LAB.items():
     r = [lab]
     for fac in FAC:
         x = kw[(kw.measure == m) & (kw.factor == fac)].iloc[0]
-        r.append(f"{x.eta2_H:.3f}" + ("\\*\\*\\*" if x.q < .001 else "\\*\\*" if x.q < .01 else "\\*" if x.q < .05 else ""))
+        r.append(f"{x.eta2_H:.3f}" + ("\\*\\*\\*" if x.q < 0.001 else "\\*\\*" if x.q < 0.01 else "\\*" if x.q < 0.05 else ""))
     rows.append(r)
 A("Table S15. Kruskal–Wallis effect sizes ($\\eta^2_H$) by measure and factor in the main corpus (*n* = 225 persona–model units; "
-  "BH correction across the 16 tests; \\* *q* < .05, \\*\\* *q* < .01, \\*\\*\\* *q* < .001)\n")
+  "BH correction across the 16 tests; \\* *q* < 0.05, \\*\\* *q* < 0.01, \\*\\*\\* *q* < 0.001)\n")
 A(md(pd.DataFrame(rows, columns=["Measure", "Profession", "Gender", "Nationality", "Model"])) + "\n")
 A("![Fig. S4. Mean tone (a) and agency arc (b) by profession and model in the main corpus (± 95% CI over 15 persona units per cell). "
   "Tone differs mainly between models; the janitor persona has the smallest agency arc in all three models](../figures/FigS4.png){width=100%}\n")

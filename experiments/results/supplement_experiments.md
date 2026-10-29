@@ -1,6 +1,6 @@
 # S4 Additional results for the main corpus
 
-Table S15. Kruskal–Wallis effect sizes ($\eta^2_H$) by measure and factor in the main corpus (*n* = 225 persona–model units; BH correction across the 16 tests; \* *q* < .05, \*\* *q* < .01, \*\*\* *q* < .001)
+Table S15. Kruskal–Wallis effect sizes ($\eta^2_H$) by measure and factor in the main corpus (*n* = 225 persona–model units; BH correction across the 16 tests; \* *q* < 0.05, \*\* *q* < 0.01, \*\*\* *q* < 0.001)
 
 | Measure | Profession | Gender | Nationality | Model |
 |:--|:--:|:--:|:--:|:--:|
@@ -118,7 +118,7 @@ Table S18. Agreement between Qwen3 8B and Granite 3.3 8B on the main-corpus samp
 | Development | 0.48 | 0.66 | ↓ −0.34 [−0.52, −0.17] | 0.65 | ↓ −0.25 [−0.42, −0.09] | 0.47 |
 | Welcome | 0.50 | 0.64 | ↓ −0.47 [−0.58, −0.35] | 1.44 | ↓ −0.26 [−0.43, −0.10] | 0.54 |
 
-Convergent validity (Qwen3 8B, persona–model means): rated agency with P3 ρ = 0.56, with P2 ρ = 0.29; rated competence with P3 ρ = 0.52; rated development with P2 ρ = 0.12 (*p* = .066); rated warmth with P1 ρ = −0.10 (*p* = .131).
+Convergent validity (Qwen3 8B, persona–model means): rated agency with P3 ρ = 0.56, with P2 ρ = 0.29; rated competence with P3 ρ = 0.52; rated development with P2 ρ = 0.12 (*p* = 0.066); rated warmth with P1 ρ = −0.10 (*p* = 0.131).
 
 Table S19. Larger rater: Qwen3 32B on a stratified sample of 600 main-corpus stories (40 per profession and model). Spearman ρ with Qwen3 8B on the same stories, and janitor gap of Qwen3 32B (persona–model means, 95% bootstrap CI)
 
@@ -154,10 +154,10 @@ Table S21. Exp. 4: Spearman correlations across occupations (13 with prestige, 1
 
 | Model | Prestige–agency | Without janitor | β prestige | Prestige–competence | Prestige–warmth | Warmth norm–warmth | Competence norm–agency | Prestige–tone |
 |:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| Mistral 7B | 0.62 (.024) | 0.52 (.085) | 0.48 (< .001) | 0.37 (.218) | −0.32 (.289) | 0.66 (.026) | 0.13 (.709) | −0.17 (.578) |
-| Llama 3 8B | 0.79 (.001) | 0.73 (.007) | 0.41 (< .001) | 0.49 (.092) | −0.50 (.082) | 0.58 (.064) | 0.12 (.726) | 0.58 (.039) |
-| Gemma 4 31B | 0.36 (.228) | 0.18 (.569) | 0.32 (.029) | 0.33 (.265) | −0.04 (.901) | 0.76 (.006) | 0.44 (.179) | 0.26 (.394) |
-| Pooled | 0.62 (.023) | 0.52 (.082) | 0.37 (< .001) | 0.44 (.132) | −0.21 (.482) | 0.71 (.015) | 0.41 (.212) | 0.07 (.831) |
+| Mistral 7B | 0.62 (0.024) | 0.52 (0.085) | 0.48 (< 0.001) | 0.37 (0.218) | −0.32 (0.289) | 0.66 (0.026) | 0.13 (0.709) | −0.17 (0.578) |
+| Llama 3 8B | 0.79 (0.001) | 0.73 (0.007) | 0.41 (< 0.001) | 0.49 (0.092) | −0.50 (0.082) | 0.58 (0.064) | 0.12 (0.726) | 0.58 (0.039) |
+| Gemma 4 31B | 0.36 (0.228) | 0.18 (0.569) | 0.32 (0.029) | 0.33 (0.265) | −0.04 (0.901) | 0.76 (0.006) | 0.44 (0.179) | 0.26 (0.394) |
+| Pooled | 0.62 (0.023) | 0.52 (0.082) | 0.37 (< 0.001) | 0.44 (0.132) | −0.21 (0.482) | 0.71 (0.015) | 0.41 (0.212) | 0.07 (0.831) |
 
 ## S5.5 Mitigation (Exp. 5)
 

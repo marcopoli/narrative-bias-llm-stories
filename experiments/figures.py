@@ -179,8 +179,8 @@ def scatter(ax, x, y, xlabel, ylabel, rho, title, offsets):
     ax.text(0.03, 0.96, rho, transform=ax.transAxes, fontsize=7, color=INK, va="top")
     ax.set_title(title, loc="left", weight="bold", fontsize=9)
 r1 = N["exp4"]["pooled"]["rho_prestige_agency"]; r2 = N["exp4"]["pooled"]["rho_warmth_warmth"]
-scatter(a, pre, occ["agency"], "Occupational prestige (0-100)", "Rated agency (1-7)", f"Spearman ρ = {r1[0]:.2f}, p = {r1[1]:.3f}".replace("0.", ".", 2), "a", OFFSET)
-scatter(b, wn, occ["warmth"], "Human warmth norm (1-5)", "Rated warmth (1-7)", f"Spearman ρ = {r2[0]:.2f}, p = {r2[1]:.3f}".replace("0.", ".", 2), "b", OFFSET_B)
+scatter(a, pre, occ["agency"], "Occupational prestige (0-100)", "Rated agency (1-7)", f"Spearman ρ = {r1[0]:.2f}, p = {r1[1]:.3f}", "a", OFFSET)
+scatter(b, wn, occ["warmth"], "Human warmth norm (1-5)", "Rated warmth (1-7)", f"Spearman ρ = {r2[0]:.2f}, p = {r2[1]:.3f}", "b", OFFSET_B)
 fig.tight_layout(w_pad=2.0); save(fig, "Fig3")
 
 # ------------------------------------------------------------------ Fig. 4 mitigation (Experiment 5)

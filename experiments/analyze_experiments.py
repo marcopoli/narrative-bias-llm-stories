@@ -38,7 +38,7 @@ def boot_diff(a, b, n=2000):
     d = [rng.choice(a, len(a)).mean() - rng.choice(b, len(b)).mean() for _ in range(n)]
     return float(np.mean(a) - np.mean(b)), float(np.percentile(d, 2.5)), float(np.percentile(d, 97.5))
 def fmt(x, k=3): return f"{x:.{k}f}".replace("-", "−")
-def fp(p): return "< .001" if p < .001 else f"{p:.3f}".replace("0.", ".", 1)
+def fp(p): return "< 0.001" if p < .001 else f"{p:.3f}"
 def md_table(df):
     cols = list(df.columns)
     out = ["| " + " | ".join(cols) + " |", "|" + "|".join([":--"] + [":--:"] * (len(cols) - 1)) + "|"]
